@@ -1,0 +1,25 @@
+# Python
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+*.pyo
+*.pyc
+
+# Virtual Environment
+venv/
+env/
+ENV/
+
+# Jupyter Notebook
+.ipynb_checkpoints
+
+# Pickle files
+*.pkl
+
+# IDE
+.vscode/
+
+# OS-generated files
+.DS_Store
+Thumbs.db
