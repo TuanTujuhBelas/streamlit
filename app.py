@@ -2,7 +2,7 @@ import streamlit as st
 import pickle
 
 
-with open(r"C:\Users\abhim\Downloads\UAS DATAMINING_ABIMANYU_2020230018\Soal UAS (Mlm) - DW-DM - 2023-1\model_uas.pkl", 'rb') as f:
+with open(r"model_uas.pkl", 'rb') as f:
     model = pickle.load(f)
 
 
