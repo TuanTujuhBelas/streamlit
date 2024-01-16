@@ -2,9 +2,8 @@ import streamlit as st
 import pickle
 
 
-with open(r"model_uas.pkl", 'rb') as f:
+with open("model_uas.pkl", 'rb') as f:
     model = pickle.load(f)
-
 
 features = ['age', 'sex', 'bmi', 'children', 'smoker',]
 
@@ -18,7 +17,7 @@ for feature in features:
 
 if st.button('Submit'):
     prediction = model.predict([values])
-    rounded_prediction = round(prediction[0])  # Memakai round() untuk membulatkan
+    rounded_prediction = round(prediction[0])  
     st.write('Prediksi biaya asuransi:', rounded_prediction)
 
 
